@@ -13,3 +13,5 @@ export const signUpValidator = z.object({
     .string()
     .min(6, { message: "password must be at least 6 characters" }),
 });
+
+export type signupTypes = z.infer<typeof signUpValidator>;
